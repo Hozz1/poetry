@@ -1,0 +1,95 @@
+:root {
+  /* base */
+  --radius: 16px;
+  --shadow: 0 10px 30px rgba(0, 0, 0, 0.18);
+  --maxw: 980px;
+
+  /* dark theme (default) */
+  --bg: #0b0c10;
+  --bg-grad-1: rgba(99, 102, 241, 0.18);
+  --bg-grad-2: rgba(16, 185, 129, 0.14);
+
+  --panel: rgba(255, 255, 255, 0.06);
+  --panel-strong: rgba(255, 255, 255, 0.10);
+
+  --text: rgba(255, 255, 255, 0.92);
+  --muted: rgba(255, 255, 255, 0.66);
+
+  --border: rgba(255, 255, 255, 0.14);
+  --border-strong: rgba(255, 255, 255, 0.22);
+
+  --chip-bg: rgba(0, 0, 0, 0.22);
+  --chip-text: rgba(255, 255, 255, 0.72);
+
+  --input-bg: rgba(255, 255, 255, 0.04);
+  --input-bg-focus: rgba(255, 255, 255, 0.07);
+}
+
+/* light theme overrides */
+:root[data-theme="light"] {
+  --bg: #f6f7fb;
+  --bg-grad-1: rgba(99, 102, 241, 0.12);
+  --bg-grad-2: rgba(16, 185, 129, 0.10);
+
+  --panel: rgba(255, 255, 255, 0.80);
+  --panel-strong: rgba(255, 255, 255, 0.94);
+
+  --text: rgba(15, 23, 42, 0.92);
+  --muted: rgba(15, 23, 42, 0.62);
+
+  --border: rgba(15, 23, 42, 0.12);
+  --border-strong: rgba(15, 23, 42, 0.18);
+
+  --chip-bg: rgba(15, 23, 42, 0.05);
+  --chip-text: rgba(15, 23, 42, 0.68);
+
+  --input-bg: rgba(15, 23, 42, 0.04);
+  --input-bg-focus: rgba(15, 23, 42, 0.06);
+
+  --shadow: 0 10px 30px rgba(2, 6, 23, 0.10);
+}
+
+* { box-sizing: border-box; }
+
+html, body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  background:
+    radial-gradient(1200px 700px at 15% 10%, var(--bg-grad-1), transparent 55%),
+    radial-gradient(900px 600px at 85% 20%, var(--bg-grad-2), transparent 55%),
+    var(--bg);
+  color: var(--text);
+  font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Arial, "Noto Sans", "Apple Color Emoji", "Segoe UI Emoji";
+  line-height: 1.5;
+}
+
+a { color: inherit; text-decoration: none; }
+button { font: inherit; }
+
+.container {
+  width: 100%;
+  max-width: var(--maxw);
+  margin: 0 auto;
+  padding: 24px;
+}
+
+/* smooth theme transitions */
+body,
+header,
+main,
+section,
+article,
+input,
+button,
+pre,
+div {
+  transition:
+    background-color 180ms ease,
+    color 180ms ease,
+    border-color 180ms ease,
+    box-shadow 180ms ease,
+    filter 180ms ease;
+}
