@@ -1,0 +1,15 @@
+# IDE
+.idea/
+.vscode/
+
+# Python
+venv/
+__pycache__/
+*.pyc
+
+# SQLite
+*.sqlite3
+
+# Node
+node_modules/
+dist/
