@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-qpej!5l^s=r9-lm+rkg2gku_=+@kp300&fzq^(kywt+2#j7h4c
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['https://poetry-6hko.onrender.com/',]
 
 
 # Application definition
