@@ -1,6 +1,6 @@
 import { useEffect, useMemo, useState } from "react";
 import styles from "./App.module.css";
-import { fetchLanguages, fetchPoems, type Language, type Poem } from "./api/poetry";
+import { fetchLanguages, fetchPoems, type Language, type Poem } from "./api/poems";
 import PoemModal from "./components/PoemModal";
 
 type Filter = "all" | number;

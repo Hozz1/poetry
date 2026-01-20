@@ -1,6 +1,6 @@
 import { useEffect } from "react";
 import styles from "./PoemModal.module.css";
-import type { Poem } from "../api/poetry";
+import type { Poem } from "../api/poems";
 
 type Props = {
   poem: Poem | null;
