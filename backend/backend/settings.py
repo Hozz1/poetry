@@ -62,7 +62,13 @@ STATIC_ROOT = BASE_DIR / "staticfiles"
 
 CORS_ALLOWED_ORIGINS = [
     "http://localhost:5173",
+    "https://poetry-front-kzxm.onrender.com",
 ]
+
+CSRF_TRUSTED_ORIGINS = [
+    "https://poetry-front-kzxm.onrender.com",
+]
+
 
 ROOT_URLCONF = 'backend.urls'
 
