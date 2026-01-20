@@ -1,7 +1,6 @@
 from django.contrib import admin
 from .models import Poetry, Language
 
-admin.site.site_header = "POETRY ADMIN (Render)"
 @admin.register(Language)
 class LanguageAdmin(admin.ModelAdmin):
     list_display = ("id", "language")
